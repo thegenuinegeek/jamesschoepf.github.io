@@ -7,32 +7,36 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Reduce padding on the spotlight sections to get content higher up */
+			/* Reduce padding on the spotlight sections */
 			.wrapper.spotlight .inner {
 				padding: 2em 0 1em 0 !important;
 			}
-			
-			/* Optional: Shrink the massive banner height a bit */
+		
+			/* Consolidated Banner: Clean, Visible, and Professional */
 			#banner {
-				padding: 4em 0 2em 0 !important;
+				/* Adjusted overlay: 0.4 opacity lets the image through, 0.7 at the bottom adds contrast for the button */
+				background-image: linear-gradient(rgba(20, 21, 26, 0.4), rgba(20, 21, 26, 0.7)), url("images/macon-skyline.jpg");
+				background-position: center;
+				background-size: cover;
+				background-attachment: fixed; 
+				
+				/* Balanced padding for a modern look */
+				padding: 7em 0 5em 0 !important;
 				min-height: 50vh !important;
-				filter: grayscale(75%);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-bottom: 0;
 			}
 		
 			/* Make the headshot circular and crisp */
 			.image.headshot img {
 				border-radius: 50%;
 				border: 4px solid rgba(255, 255, 255, 0.1);
+				object-fit: cover;
+				aspect-ratio: 1 / 1;
 			}
-			#banner {
-        	/* This creates a dark-to-transparent gradient over your image */
-        		background-image: linear-gradient(rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("images/macon-skyline.jpg");
-        		background-position: center;
-        		background-size: cover;
-        		background-attachment: fixed; /* Optional: This creates a subtle parallax effect */
-        		padding: 8em 0 6em 0 !important;
-        		text-align: center;
-    		}
 		</style>
     </head>
     <body class="is-preload">
