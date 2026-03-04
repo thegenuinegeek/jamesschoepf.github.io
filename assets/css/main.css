@@ -4294,3 +4294,27 @@ input, select, textarea {
 html {
     scroll-behavior: smooth;
 }
+
+/* Styling the "Special" Inline Links */
+a.special {
+    color: #ff9900 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    border-bottom: 0 !important; /* Removes the dotted line */
+    display: inline-block;
+    margin-top: 1em;
+}
+
+a.special:after {
+    content: '\f105'; /* FontAwesome Angle Right */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-left: 0.75em;
+    transition: margin-left 0.2s ease;
+}
+
+a.special:hover:after {
+    margin-left: 1.25em; /* Subtle "push" effect on hover */
+}
