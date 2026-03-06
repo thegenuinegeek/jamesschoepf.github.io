@@ -825,12 +825,12 @@ body.is-menu-visible #menu .inner {
    ========================================================================== */
 
 #banner {
-	padding: 10em 0 4.75em 0;
+	padding: 7em 0 3em 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	min-height: 55vh;
+	min-height: 50vh;
 }
 
 #banner .inner {
