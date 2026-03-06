@@ -919,6 +919,7 @@ body.is-menu-visible #menu .inner {
 	font-size: 0.9em !important;
 	text-transform: none !important;
 	letter-spacing: 0.02em !important;
+	text-align: center !important;
 	opacity: 0.85;
 	margin-bottom: 0.5em !important;
 }
@@ -927,6 +928,7 @@ body.is-menu-visible #menu .inner {
 	font-size: 0.7em !important;
 	font-weight: 300;
 	letter-spacing: 0.05em !important;
+	text-align: center !important;
 	opacity: 0.55;
 	margin-bottom: 1.5em !important;
 }
