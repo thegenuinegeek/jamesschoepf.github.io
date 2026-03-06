@@ -1035,12 +1035,8 @@ body.is-menu-visible #menu .inner {
 		margin-bottom: -2.5em;
 	}
 
-	#banner .logo {
-		margin: 0 0 1em 0;
-	}
-
-	#banner .logo i {
-		font-size: 3em;
+	#banner .inner {
+		text-align: center;
 	}
 
 	#banner h2 {
