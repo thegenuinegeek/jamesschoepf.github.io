@@ -174,6 +174,10 @@ strong, b {
 	font-weight: 600;
 }
 
+strong.highlight {
+	color: #f0d9a0;
+}
+
 em, i {
 	font-style: italic;
 }
@@ -1454,4 +1458,38 @@ body.is-preload #banner p {
 	#footer .inner {
 		padding: 2em 1.5em 0.1em 1.5em;
 	}
+}
+
+/* Footer top accent */
+#footer {
+	border-top: 3px solid rgba(255, 153, 0, 0.4);
+}
+
+.footer-seeking {
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+	margin-top: -0.5em;
+}
+
+.footer-seeking strong {
+	color: #ff9900;
+}
+
+/* ==========================================================================
+   Scroll Reveal
+   ========================================================================== */
+
+.reveal .inner {
+	opacity: 0;
+	transform: translateY(1.5em);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.is-visible .inner {
+	opacity: 1;
+	transform: translateY(0);
 }

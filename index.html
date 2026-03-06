@@ -72,7 +72,7 @@
 
         <section id="wrapper">
 
-            <section id="one" class="wrapper style1 statement">
+            <section id="one" class="wrapper style1 statement reveal">
                 <div class="inner">
                     <h2 class="major">Built on Empathy, Driven by Outcomes</h2>
                     <p>I got into technology because I believe it should serve people, not the other way around. I care about the businesses behind the infrastructure: the teams trying to grow, the leaders trying to make smart bets, and the customers who deserve a great experience.</p>
@@ -80,7 +80,7 @@
                 </div>
             </section>
 
-            <section id="two" class="wrapper alt spotlight style2">
+            <section id="two" class="wrapper alt spotlight style2 reveal">
                 <div class="inner">
                     <a href="#" class="image"><img src="images/cloud-infra.jpg" alt="Cloud Optimization" /></a>
                     <div class="content">
@@ -94,27 +94,27 @@
 
                         <ul>
                             <li><strong>Forensic Proof of Value:</strong> Built automated queries against partitioned CURv2 data that gave enterprise clients undeniable evidence of realized savings, closing the trust gap that kills deals.</li>
-                            <li><strong>70% Faster Billing Cycles:</strong> Replaced manual spreadsheet workflows with automated skills, cutting billing prep time from hours to minutes.</li>
+                            <li><strong class="highlight">70% Faster Billing Cycles:</strong> Replaced manual spreadsheet workflows with automated skills, cutting billing prep time from hours to minutes.</li>
                             <li><strong>Zero Revenue Leakage:</strong> Engineered custom logic to prevent double-billing during legacy migrations, protecting both client trust and company margins.</li>
                         </ul>
-                        <p>The result: <strong>$2M in recognized Year-1 revenue</strong> and <strong>VC funding secured</strong>, validating the pivot and the product-market fit our team built from the ground up.</p>
+                        <p>The result: <strong class="highlight">$2M in recognized Year-1 revenue</strong> and <strong class="highlight">VC funding secured</strong>, validating the pivot and the product-market fit our team built from the ground up.</p>
                         <p><strong>When problems arise, I find solutions.</strong></p>
                     </div>
                 </div>
             </section>
 
-            <section id="three" class="wrapper spotlight style3">
+            <section id="three" class="wrapper spotlight style3 reveal">
 				<div class="inner">
 					<a href="#" class="image"><img src="images/cloud-infra2.jpg" alt="Strategic Ops" /></a>
 					<div class="content">
 						<h2 class="major">Managing $1.5M in ARR as vCIO</h2>
-						<p>As vCIO, I owned the technical roadmaps for an enterprise portfolio representing over <strong>$1.5M in annual recurring revenue</strong>. Five-year technology forecasts aligned CapEx decisions with actual business goals, not vendor wish lists. Fewer surprises, lower unplanned spend, and accounts that renewed because they trusted the plan.</p>
+						<p>As vCIO, I owned the technical roadmaps for an enterprise portfolio representing over <strong class="highlight">$1.5M in annual recurring revenue</strong>. Five-year technology forecasts aligned CapEx decisions with actual business goals, not vendor wish lists. Fewer surprises, lower unplanned spend, and accounts that renewed because they trusted the plan.</p>
 						<p><strong>That trust is what I build.</strong></p>
 					</div>
 				</div>
 			</section>
 
-			<section id="four" class="wrapper alt style1">
+			<section id="four" class="wrapper alt style1 reveal">
 				<div class="inner">
 					<h2 class="major">Operating Principles</h2>
 					<p>My methodology is designed to ensure technical complexity never hinders business growth.</p>
@@ -149,6 +149,7 @@
             <div class="inner">
                 <h2 class="major">Let's Connect</h2>
                 <p>Looking for a technical leader who understands how to map cloud architecture to the bottom line? Let's talk.</p>
+                <p class="footer-seeking">Currently exploring <strong>Solutions Architect</strong> and <strong>Technical Pre-Sales</strong> roles.</p>
                 <ul class="contact">
                     <li class="icon solid fa-envelope"><a href="mailto:james.d.schoepf@gmail.com">james.d.schoepf@gmail.com</a></li>
                     <li class="icon solid fa-phone"><a href="tel:+14782383504">(478) 238-3504</a></li>
@@ -172,6 +173,18 @@
     <script>
         $('#menu .links a').on('click', function() {
             $('body').removeClass('is-menu-visible');
+        });
+
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach(function(el) {
+            observer.observe(el);
         });
     </script>
 
