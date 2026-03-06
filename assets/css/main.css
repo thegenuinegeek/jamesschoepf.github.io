@@ -831,6 +831,7 @@ body.is-menu-visible #menu .inner {
 	align-items: center;
 	justify-content: center;
 	min-height: 50vh;
+	text-align: center;
 }
 
 #banner .inner {
