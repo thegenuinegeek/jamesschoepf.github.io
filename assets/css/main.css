@@ -619,7 +619,7 @@ ul.contact li:first-child {
 
 #header nav a[href="#menu"] {
 	text-decoration: none;
-	transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 	border-radius: 5px;
 	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
 	padding: 0 1.35em;
@@ -639,11 +639,13 @@ ul.contact li:first-child {
 }
 
 #header nav a[href="#menu"]:hover {
-	background-color: rgba(255, 255, 255, 0.025);
+	background-color: rgba(255, 153, 0, 0.1);
+	box-shadow: inset 0 0 0 2px rgba(255, 153, 0, 0.4);
+	color: #ff9900 !important;
 }
 
 #header nav a[href="#menu"]:active {
-	background-color: rgba(255, 255, 255, 0.075);
+	background-color: rgba(255, 153, 0, 0.15);
 }
 
 #header.alt {
@@ -740,6 +742,8 @@ ul.contact li:first-child {
 	-webkit-overflow-scrolling: touch;
 	background: #4c5c96;
 	border-radius: 5px;
+	border: 1px solid rgba(255, 153, 0, 0.2);
+	box-shadow: 0 0 30px rgba(255, 153, 0, 0.1);
 	display: block;
 	max-width: 100%;
 	opacity: 0;
@@ -778,6 +782,18 @@ ul.contact li:first-child {
 
 #menu .links li {
 	padding: 0;
+	opacity: 0;
+	transform: translateY(0.5em);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#menu .links li:nth-child(1) { transition-delay: 0.1s; }
+#menu .links li:nth-child(2) { transition-delay: 0.2s; }
+#menu .links li:nth-child(3) { transition-delay: 0.3s; }
+
+body.is-menu-visible #menu .links li {
+	opacity: 1;
+	transform: translateY(0);
 }
 
 #menu .links li a {
@@ -791,10 +807,12 @@ ul.contact li:first-child {
 	line-height: 1.85em;
 	padding: 0.75em 0;
 	text-transform: uppercase;
+	transition: background 0.2s ease, color 0.2s ease;
 }
 
 #menu .links li a:hover {
-	background: #45558d;
+	background: rgba(255, 153, 0, 0.2);
+	color: #ff9900 !important;
 }
 
 @media screen and (max-width: 736px) {
