@@ -569,7 +569,10 @@ ul.contact li:first-child {
 
 #header {
 	transition: background-color 0.2s ease-in-out;
-	background-color: rgba(45, 37, 51, 0.95);
+	background-color: rgba(45, 37, 51, 0.6);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 	height: 3.5em;
 	left: 0;
 	line-height: 3.5em;
