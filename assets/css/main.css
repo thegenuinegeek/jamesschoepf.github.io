@@ -898,6 +898,10 @@ body.is-menu-visible #menu .inner {
 	margin-left: 0;
 	padding-left: 0;
 	gap: 1.5em;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	transform: translateY(0);
+	opacity: 1;
+	transition-delay: 1.55s;
 }
 
 #banner .actions li {
@@ -925,6 +929,9 @@ body.is-menu-visible #menu .inner {
 	text-align: center !important;
 	opacity: 0.85;
 	margin-bottom: 0.5em !important;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	transform: translateY(0);
+	transition-delay: 0.95s;
 }
 
 .banner-location {
@@ -934,6 +941,9 @@ body.is-menu-visible #menu .inner {
 	text-align: center !important;
 	opacity: 0.55;
 	margin-bottom: 1.5em !important;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	transform: translateY(0);
+	transition-delay: 1.1s;
 }
 
 .banner-credentials {
@@ -942,6 +952,10 @@ body.is-menu-visible #menu .inner {
 	margin-bottom: 1.5em;
 	flex-wrap: wrap;
 	justify-content: center;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	transform: translateY(0);
+	opacity: 1;
+	transition-delay: 1.25s;
 }
 
 .banner-credentials span {
@@ -964,6 +978,10 @@ body.is-menu-visible #menu .inner {
 	list-style: none;
 	padding: 0;
 	margin: 0 0 2em 0;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	transform: translateY(0);
+	opacity: 1;
+	transition-delay: 1.4s;
 }
 
 .banner-social li {
@@ -1065,6 +1083,19 @@ body.is-preload #banner p {
 	opacity: 0;
 	transform: translateX(0.5em);
 	filter: blur(2px);
+}
+
+body.is-preload .banner-tagline,
+body.is-preload .banner-location {
+	opacity: 0 !important;
+	transform: translateY(0.5em) !important;
+}
+
+body.is-preload .banner-credentials,
+body.is-preload .banner-social,
+body.is-preload #banner .actions {
+	opacity: 0;
+	transform: translateY(0.5em);
 }
 
 /* ==========================================================================
