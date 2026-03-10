@@ -1164,8 +1164,8 @@ body.is-preload #banner .actions {
 }
 
 .cert-badge img {
-	width: 10em;
-	height: 10em;
+	width: 7em;
+	height: 7em;
 	object-fit: contain;
 }
 
@@ -1186,8 +1186,8 @@ body.is-preload #banner .actions {
 	}
 
 	.cert-badge img {
-		width: 7em;
-		height: 7em;
+		width: 5em;
+		height: 5em;
 	}
 }
 
