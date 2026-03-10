@@ -1138,6 +1138,28 @@ body.is-preload #banner .actions {
 }
 
 /* ==========================================================================
+   Certifications
+   ========================================================================== */
+
+.certifications {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 3em;
+	flex-wrap: wrap;
+}
+
+.cert-badge {
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+	.certifications {
+		gap: 1.5em;
+	}
+}
+
+/* ==========================================================================
    Wrapper (Section containers with angled dividers)
    ========================================================================== */
 
