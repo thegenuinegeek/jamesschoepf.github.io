@@ -1143,13 +1143,13 @@ body.is-preload #banner .actions {
 
 .certs-section {
 	text-align: center;
-	padding: 2em 0;
+	padding: 0;
 }
 
 .certs-section .inner {
 	margin: 0 auto;
 	width: 55em;
-	padding: 3em 0 1em 0;
+	padding: 1em 0 1em 0;
 }
 
 .certs-section h2.major {
