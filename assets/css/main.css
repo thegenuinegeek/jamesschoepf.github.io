@@ -1141,12 +1141,34 @@ body.is-preload #banner .actions {
    Certifications
    ========================================================================== */
 
+.certs-section {
+	text-align: center;
+	padding: 2em 0;
+}
+
+.certs-section .inner {
+	margin: 0 auto;
+	width: 55em;
+	padding: 3em 0 1em 0;
+}
+
+.certs-section h2.major {
+	border-bottom-color: rgba(200, 121, 65, 0.3);
+}
+
 .certifications {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	gap: 3em;
 	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 980px) {
+	.certs-section .inner {
+		padding: 3em 3em 1em 3em;
+		width: 100%;
+	}
 }
 
 .cert-badge {
